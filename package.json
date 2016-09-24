@@ -1,0 +1,30 @@
+{
+  "name": "frampton-browser",
+  "version": "0.0.1",
+  "description": "A modules with abstractions for common browser inputs",
+  "scripts": {
+    "test": "frampton test",
+    "build": "frampton build",
+    "clean-install": "rm -rf node_modules; npm install;",
+    "release": "frampton release --patch",
+    "minor-release": "frampton release --minor",
+    "major-release": "frampton release --major",
+    "docs": "rm -rf docs/* && jsdoc packages/**/src/*.js -d docs --readme README.md  --private"
+  },
+  "author": "Kevin Greene <hightimesteddy@gmail.com>",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:framptonjs/frampton-browser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/framptonjs/frampton-browser/issues"
+  },
+  "homepage": "https://github.com/framptonjs/frampton-browser",
+  "devDependencies": {
+    "frampton": "0.2.3",
+    "frampton-build": "0.0.6",
+    "frampton-cli": "0.0.10",
+    "jsdoc": "3.4.0"
+  }
+}

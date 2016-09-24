@@ -1,0 +1,47 @@
+{
+  "predef": [
+    "QUnit",
+    "define",
+    "console",
+    "require",
+
+    // A subset of "browser:true":
+    "window",
+    "document",
+    "setTimeout",
+    "clearTimeout",
+    "setInterval",
+    "clearInterval",
+    "requestAnimationFrame",
+    "cancelAnimationFrame",
+    "XMLHttpRequest",
+    "FormData",
+    "FileReader",
+    "Node",
+    "Element"
+  ],
+
+  "esnext": true,
+  "node" : false,
+  "browser" : false,
+  "boss" : true,
+  "curly": false,
+  "debug": false,
+  "devel": false,
+  "eqeqeq": true,
+  "forin": false,
+  "laxbreak": false,
+  "noarg": true,
+  "noempty": false,
+  "nonew": false,
+  "onevar": false,
+  "plusplus": false,
+  "regexp": false,
+  "undef": true,
+  "sub": true,
+  "strict": false,
+  "white": true,
+  "eqnull": true,
+  "unused": "vars",
+  "laxcomma": true
+}
