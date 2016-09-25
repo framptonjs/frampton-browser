@@ -66,7 +66,7 @@ define('frampton-browser', ['frampton/namespace', 'frampton-browser/mouse', 'fra
    * @memberof Frampton
    */
   _namespace2.default.Browser = {};
-  _namespace2.default.Browser.VERSION = '0.0.1';
+  _namespace2.default.Browser.VERSION = '0.0.2';
   _namespace2.default.Browser.Mouse = _mouse2.default;
   _namespace2.default.Browser.Window = _window2.default;
 

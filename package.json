@@ -1,6 +1,6 @@
 {
   "name": "frampton-browser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A modules with abstractions for common browser inputs",
   "scripts": {
     "test": "frampton test",
