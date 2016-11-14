@@ -6,7 +6,7 @@ const mockEvent = {
   keyCode : 84
 };
 
-QUnit.test('Should correctly get keyCode form event object', function(assert) {
+QUnit.test('correctly gets keyCode form event object', function(assert) {
   const actual = keyCode(mockEvent);
   const expected = 84;
   assert.equal(actual, expected);

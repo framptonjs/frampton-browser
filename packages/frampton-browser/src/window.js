@@ -1,6 +1,6 @@
 import stepper from 'frampton-signal/stepper';
 import onEvent from 'frampton-events/on_event';
-import get from 'frampton-utils/get';
+import get from 'frampton-object/get';
 import isSomething from 'frampton-utils/is_something';
 
 const element = null;

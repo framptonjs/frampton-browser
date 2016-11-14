@@ -84,7 +84,7 @@ define('frampton-browser', ['frampton/namespace', 'frampton-browser/mouse', 'fra
   _namespace2.default.Browser.Keyboard.Utils.isCtrl = _is_ctrl2.default;
   _namespace2.default.Browser.Keyboard.Utils.isShift = _is_shift2.default;
 });
-define('frampton-browser/keyboard/keyboard', ['exports', 'frampton-utils/curry', 'frampton-list/contains', 'frampton-list/append', 'frampton-list/remove', 'frampton-events/on_event', 'frampton-signal/stepper', 'frampton-keyboard/utils/key_map', 'frampton-keyboard/utils/key_code'], function (exports, _curry, _contains, _append, _remove, _on_event, _stepper, _key_map, _key_code) {
+define('frampton-browser/keyboard/keyboard', ['exports', 'frampton-utils/curry', 'frampton-list/contains', 'frampton-list/append', 'frampton-list/remove', 'frampton-events/on_event', 'frampton-signal/stepper', 'frampton-browser/keyboard/utils/key_map', 'frampton-browser/keyboard/utils/key_code'], function (exports, _curry, _contains, _append, _remove, _on_event, _stepper, _key_map, _key_code) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -200,7 +200,7 @@ define('frampton-browser/keyboard/keyboard', ['exports', 'frampton-utils/curry',
     return defaultKeyboard;
   }
 });
-define('frampton-browser/keyboard/utils/is_ctrl', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_ctrl', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -219,7 +219,7 @@ define('frampton-browser/keyboard/utils/is_ctrl', ['exports', 'frampton-keyboard
 
   exports.default = (0, _is_key2.default)(_key_map2.default.CTRL);
 });
-define('frampton-browser/keyboard/utils/is_down', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_down', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -238,7 +238,7 @@ define('frampton-browser/keyboard/utils/is_down', ['exports', 'frampton-keyboard
 
   exports.default = (0, _is_key2.default)(_key_map2.default.DOWN);
 });
-define('frampton-browser/keyboard/utils/is_enter', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_enter', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -257,7 +257,7 @@ define('frampton-browser/keyboard/utils/is_enter', ['exports', 'frampton-keyboar
 
   exports.default = (0, _is_key2.default)(_key_map2.default.ENTER);
 });
-define('frampton-browser/keyboard/utils/is_esc', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_esc', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -295,7 +295,7 @@ define('frampton-browser/keyboard/utils/is_key', ['exports', 'frampton-utils/cur
     return key === keyCode;
   });
 });
-define('frampton-browser/keyboard/utils/is_left', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_left', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -314,7 +314,7 @@ define('frampton-browser/keyboard/utils/is_left', ['exports', 'frampton-keyboard
 
   exports.default = (0, _is_key2.default)(_key_map2.default.LEFT);
 });
-define('frampton-browser/keyboard/utils/is_right', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_right', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -333,7 +333,7 @@ define('frampton-browser/keyboard/utils/is_right', ['exports', 'frampton-keyboar
 
   exports.default = (0, _is_key2.default)(_key_map2.default.RIGHT);
 });
-define('frampton-browser/keyboard/utils/is_shift', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_shift', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -352,7 +352,7 @@ define('frampton-browser/keyboard/utils/is_shift', ['exports', 'frampton-keyboar
 
   exports.default = (0, _is_key2.default)(_key_map2.default.SHIFT);
 });
-define('frampton-browser/keyboard/utils/is_space', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_space', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -371,7 +371,7 @@ define('frampton-browser/keyboard/utils/is_space', ['exports', 'frampton-keyboar
 
   exports.default = (0, _is_key2.default)(_key_map2.default.SPACE);
 });
-define('frampton-browser/keyboard/utils/is_up', ['exports', 'frampton-keyboard/utils/is_key', 'frampton-keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
+define('frampton-browser/keyboard/utils/is_up', ['exports', 'frampton-browser/keyboard/utils/is_key', 'frampton-browser/keyboard/utils/key_map'], function (exports, _is_key, _key_map) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -390,7 +390,7 @@ define('frampton-browser/keyboard/utils/is_up', ['exports', 'frampton-keyboard/u
 
   exports.default = (0, _is_key2.default)(_key_map2.default.UP);
 });
-define('frampton-browser/keyboard/utils/key_code', ['exports', 'frampton-utils/get'], function (exports, _get) {
+define('frampton-browser/keyboard/utils/key_code', ['exports', 'frampton-object/get'], function (exports, _get) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -481,7 +481,7 @@ define('frampton-browser/mouse', ['exports', 'frampton-signal/stepper', 'frampto
     }
   }
 });
-define('frampton-browser/window', ['exports', 'frampton-signal/stepper', 'frampton-events/on_event', 'frampton-utils/get', 'frampton-utils/is_something'], function (exports, _stepper, _on_event, _get, _is_something) {
+define('frampton-browser/window', ['exports', 'frampton-signal/stepper', 'frampton-events/on_event', 'frampton-object/get', 'frampton-utils/is_something'], function (exports, _stepper, _on_event, _get, _is_something) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
